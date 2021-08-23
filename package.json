@@ -1,0 +1,29 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amandajean007/READme-Generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amandajean007/READme-Generator/issues"
+  },
+  "homepage": "https://github.com/amandajean007/READme-Generator#readme",
+  "dependencies": {
+    "buffer": "^6.0.3",
+    "color-convert": "^2.0.1",
+    "fs": "^0.0.1-security",
+    "inherits": "^2.0.4",
+    "inquirer": "^8.1.2",
+    "readable-stream": "^3.6.0",
+    "type-fest": "^2.0.0"
+  }
+}
