@@ -116,7 +116,7 @@ const questions = [
     choices: ['incomplete', 'in progress', 'complete'],
 },
 
-// License ++++++++++ADD BADGE
+// License
 {
   type: 'list',
   name: 'license',
@@ -133,23 +133,40 @@ const questions = [
 }
 
 ];
- 
 
  inquirer.prompt(questions)
   .then((answers) => {
   const filename = `1README.md`;
+  let badge = "";
+
+  if (answers.license === "Apache License 2.0") {
+    badge =  `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
+  } else if (answers.license === "GNU General Public License v3.0") {
+    badge = `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`;
+  } else {
+    badge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
+  }
 
   const readMe = '# ' + answers.title + 
-  '\n## Description\n' + answers.description + 
-  '\n## Table of Contents\n' + answers.tableOfContents +
-  '\n## Technologies\n' + answers.technologies + 
-  '\n## License\n' + answers.licenses +
-  '\n## Installation\n' + answers.installation +
-  '\n## Illustrations\n' + answers.illustrations +
-  '\n## Scope of Functionalities\n' + answers.scopeOfFunctinoalities +
-  '\n## Examples of Use\n' + answers.examplesOfUse +
-  '\n## Status\n' + answers.status +
-  '\n## Sources\n' + answers.sources
+  '\n## Description <a name="description"></a>\n' + answers.description + 
+  '\n## Table of Contents\n' + 
+  '1. [Description](#description)\n' +
+  '2. [Technologies](#technologies)\n' +
+  '3. [License](#license)\n' +
+  '4. [Installation](#installation)\n' +
+  '5. [Illustrations](#illustrations)\n' +
+  '6. [Scope of Functionalities](#functionalities)\n' +
+  '7. [Examples of Use](#examples)\n' +
+  '8. [Status](#status)\n' +
+  '9. [Sources](#sources)' +
+  '\n## Technologies <a name="technologies"></a>\n' + answers.technologies + 
+  '\n## License <a name="license"></a>\n' + badge +
+  '\n## Installation <a name="installation"></a>\n' + answers.installation +
+  '\n## Illustrations <a name="illustrations"></a>\n' + answers.illustrations +
+  '\n## Scope of Functionalities <a name="functionalities"></a>\n' + answers.scopeOfFunctinoalities +
+  '\n## Examples of Use <a name="examples"></a>\n' + answers.examplesOfUse +
+  '\n## Status <a name="status"></a>\n' + answers.status +
+  '\n## Sources <a name="sources"></a>\n' + answers.sources
 
 
     fs.writeFile(filename, readMe, (err) =>
