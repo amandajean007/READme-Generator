@@ -12,13 +12,29 @@ const questions = [
     default: 'Teleportation Machine',
   },
 
-// Introduction - the project's aim
+// Description - the project's aim
 {
-    type: 'input',
-    name: 'introduction',
-    message: "What's your project's aim?",
-    default: 'The projects aim is... ',
-  }, 
+  type: 'input',
+  name: 'description',
+  message: "What's your project's aim?",
+  default: 'The projects aim is... ',
+}, 
+
+// Email
+{
+  type: 'input',
+  name: 'email',
+  message: 'What is your e-mail?',
+  default: 'nerdbird112@gmail.com',
+},
+
+// Github Username
+{
+  type: 'input',
+  name: 'github username',
+  message: 'What is your Github username?',
+  default: 'nerdbird112',
+},
 
 // Technologies
 {
@@ -53,15 +69,15 @@ const questions = [
     ]
   },
 
-// Launch
+// Installation
 {
     type: 'input',
-    name: 'launch',
+    name: 'installation',
     message: 'How do you launch your project?',
     default: 'Add this link to your browser on any computer or smart device to run the website URL.'
   },
 
-// Table of contents
+// Table of contents ++++++++++ DIRECTORY BUTTON?
 {
     type: 'input',
     name: 'tableOfContents',
@@ -100,6 +116,14 @@ const questions = [
     choices: ['incomplete', 'in progress', 'complete'],
 },
 
+// License ++++++++++ADD BADGE
+{
+  type: 'list',
+  name: 'license',
+  message: 'What type of license would you like to have for your project?',
+  choices: ['Apache License 2.0', 'GNU General Public License v3.0', 'MIT License'],
+},
+
 // Sources
 {
     type: 'input',
@@ -113,12 +137,14 @@ const questions = [
 
  inquirer.prompt(questions)
   .then((answers) => {
-  const filename = `README.md`;
+  const filename = `1README.md`;
+
   const readMe = '# ' + answers.title + 
-  '\n## Introduction\n' + answers.introduction + 
-  '\n## Technologies\n' + answers.technologies + 
-  '\n## Launch\n' + answers.launch +
+  '\n## Description\n' + answers.description + 
   '\n## Table of Contents\n' + answers.tableOfContents +
+  '\n## Technologies\n' + answers.technologies + 
+  '\n## License\n' + answers.licenses +
+  '\n## Installation\n' + answers.installation +
   '\n## Illustrations\n' + answers.illustrations +
   '\n## Scope of Functionalities\n' + answers.scopeOfFunctinoalities +
   '\n## Examples of Use\n' + answers.examplesOfUse +
