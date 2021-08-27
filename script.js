@@ -31,7 +31,7 @@ const questions = [
 // Github Username
 {
   type: 'input',
-  name: 'github username',
+  name: 'githubUsername',
   message: 'What is your Github username?',
   default: 'nerdbird112',
 },
@@ -77,7 +77,7 @@ const questions = [
     default: 'Add this link to your browser on any computer or smart device to run the website URL.'
   },
 
-// Table of contents ++++++++++ DIRECTORY BUTTON?
+// Table of contents
 {
     type: 'input',
     name: 'tableOfContents',
@@ -147,24 +147,31 @@ const questions = [
     badge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
   }
 
+  let technologies = answers.technologies.toString().split(',').map((word) => `#### -${word}`).join("\n");
+
   const readMe = '# ' + answers.title + 
+  '\n' + badge + 
   '\n## Description <a name="description"></a>\n' + answers.description + 
   '\n## Table of Contents\n' + 
   '1. [Description](#description)\n' +
-  '2. [Technologies](#technologies)\n' +
-  '3. [License](#license)\n' +
-  '4. [Installation](#installation)\n' +
-  '5. [Illustrations](#illustrations)\n' +
-  '6. [Scope of Functionalities](#functionalities)\n' +
-  '7. [Examples of Use](#examples)\n' +
-  '8. [Status](#status)\n' +
-  '9. [Sources](#sources)' +
-  '\n## Technologies <a name="technologies"></a>\n' + answers.technologies + 
-  '\n## License <a name="license"></a>\n' + badge +
+  '2. [Installation](#installation)\n' +
+  '3. [Examples of Use](#examples)\n' +
+  '4. [Technologies](#technologies)\n' +
+  '5. [License](#license)\n' +
+  '6. [Contributions](#contributions)\n' +
+  '7. [Illustrations](#illustrations)\n' +
+  '8. [Tests](#tests)\n' +
+  '9. [Questions](#questions)\n' +
+  '10. [Status](#status)\n' +
+  '11. [Sources](#sources)' +
   '\n## Installation <a name="installation"></a>\n' + answers.installation +
-  '\n## Illustrations <a name="illustrations"></a>\n' + answers.illustrations +
-  '\n## Scope of Functionalities <a name="functionalities"></a>\n' + answers.scopeOfFunctinoalities +
   '\n## Examples of Use <a name="examples"></a>\n' + answers.examplesOfUse +
+  '\n## Technologies <a name="technologies"></a>\n' + technologies + 
+  '\n## License <a name="license"></a>\n' + answers.license +
+  '\n## Contributions <a name="contributions"></a>\n' + '#### You can make contributions to my project here! \n <button target=_blank href="https://github.com/' + answers.githubUsername + '">Contribute Here</button>' +
+  '\n## Illustrations <a name="illustrations"></a>\n' + answers.illustrations +
+  '\n## Tests <a name="tests"></a>\n' +
+  '\n## Questions <a name="questions"></a>\n' + '#### If you have any questions please reach out to me via E-Mail: ' + answers.email +
   '\n## Status <a name="status"></a>\n' + answers.status +
   '\n## Sources <a name="sources"></a>\n' + answers.sources
 
