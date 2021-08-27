@@ -136,7 +136,7 @@ const questions = [
 
  inquirer.prompt(questions)
   .then((answers) => {
-  const filename = `1README.md`;
+  const filename = `README.md`;
   let badge = "";
 
   if (answers.license === "Apache License 2.0") {
