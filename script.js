@@ -168,7 +168,7 @@ const questions = [
   '\n## Examples of Use <a name="examples"></a>\n' + answers.examplesOfUse +
   '\n## Technologies <a name="technologies"></a>\n' + technologies + 
   '\n## License <a name="license"></a>\n' + answers.license +
-  '\n## Contributions <a name="contributions"></a>\n' + '#### You can make contributions to my project here! \n <button target=_blank href="https://github.com/' + answers.githubUsername + '">Contribute Here</button>' +
+  '\n## Contributions <a name="contributions"></a>\n' + '##### You can make contributions to my project here! \n <button target=_blank href="https://github.com/' + answers.githubUsername + '">Contribute Here</button>' +
   '\n## Illustrations <a name="illustrations"></a>\n' + answers.illustrations +
   '\n## Tests <a name="tests"></a>\n' +
   '\n## Questions <a name="questions"></a>\n' + '#### If you have any questions please reach out to me via E-Mail: ' + answers.email +
