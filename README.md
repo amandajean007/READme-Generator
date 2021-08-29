@@ -22,10 +22,13 @@ MIT License
 ##### You can make contributions to my project here! 
  <button target=_blank href="https://github.com/amandajean007">Contribute Here</button>
 ## Illustrations <a name="illustrations"></a>
-<figure class="video_container">
+<!--<figure class="video_container">
   <video controls="true" allowfullscreen="true" poster="./Assets/README-generator-screenshot.PNG">
     <source src="howTo.mp4" type="video/mp4">
   </video>
+</figure>-->
+<figure class="video_container">
+  <iframe src="./howTo.mp4" frameborder="0" allowfullscreen="true"> </iframe>
 </figure>
 
 ## Questions <a name="questions"></a>
