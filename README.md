@@ -19,8 +19,8 @@ Open the file README Generator and open the integrated terminal. Run node .\scri
 ## License <a name="license"></a>
 MIT License
 ## Contributions <a name="contributions"></a>
-##### You can make contributions to my project here! 
- <button target=_blank href="https://github.com/amandajean007">Contribute Here</button>
+##### You can make contributions to my project here!
+ <a target_blank href="https://github.com/amandajean007/READme-Generator">Contribute Here</a>
 ## Illustrations <a name="illustrations"></a>
 https://user-images.githubusercontent.com/85036414/131266689-7a3040c2-0637-4c7b-a2fd-0cf0e0dc5b64.mp4
 
