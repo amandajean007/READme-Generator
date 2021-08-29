@@ -5,19 +5,15 @@ This projects aim is to make creating a professional README as easy as possible.
 ## Table of Contents
 1. [Description](#description)
 2. [Installation](#installation)
-3. [Examples of Use](#examples)
-4. [Technologies](#technologies)
-5. [License](#license)
-6. [Contributions](#contributions)
-7. [Illustrations](#illustrations)
-8. [Tests](#tests)
-9. [Questions](#questions)
-10. [Status](#status)
-11. [Sources](#sources)
+3. [Technologies](#technologies)
+4. [License](#license)
+5. [Contributions](#contributions)
+6. [Illustrations](#illustrations)
+7. [Questions](#questions)
+8. [Status](#status)
+9. [Sources](#sources)
 ## Installation <a name="installation"></a>
 Open the file README Generator and open the integrated terminal. Run node .\script.js. Answer the questions in the prompt. Upon completion, the file will be saved right in your project's folder.
-## Examples of Use <a name="examples"></a>
-
 ## Technologies <a name="technologies"></a>
 #### -Javascript
 ## License <a name="license"></a>
