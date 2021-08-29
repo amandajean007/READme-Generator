@@ -26,7 +26,7 @@ MIT License
 ##### You can make contributions to my project here! 
  <button target=_blank href="https://github.com/amandajean007">Contribute Here</button>
 ## Illustrations <a name="illustrations"></a>
-![..]
+![](./assets/howTo.mp4)
 ## Questions <a name="questions"></a>
 #### If you have any questions please reach out to me via E-Mail: ahanes35@yahoo.com
 ## Status <a name="status"></a>
