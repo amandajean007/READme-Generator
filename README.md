@@ -22,7 +22,11 @@ MIT License
 ##### You can make contributions to my project here! 
  <button target=_blank href="https://github.com/amandajean007">Contribute Here</button>
 ## Illustrations <a name="illustrations"></a>
-![](howTo.mp4)
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" poster="./Assets/README-generator-screenshot.PNG">
+    <source src="howTo.mp4" type="video/mp4">
+  </video>
+</figure>
 ## Questions <a name="questions"></a>
 #### If you have any questions please reach out to me via E-Mail: ahanes35@yahoo.com
 ## Status <a name="status"></a>
