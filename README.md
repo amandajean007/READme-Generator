@@ -1,7 +1,7 @@
-# Teleportation Machine
+# README Generator
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Description <a name="description"></a>
-The projects aim is... 
+This projects aim is to make creating a professional README as easy as possible.
 ## Table of Contents
 1. [Description](#description)
 2. [Installation](#installation)
@@ -15,25 +15,21 @@ The projects aim is...
 10. [Status](#status)
 11. [Sources](#sources)
 ## Installation <a name="installation"></a>
-Add this link to your browser on any computer or smart device to run the website URL.
+Open the file README Generator and open the integrated terminal. Run node .\script.js. Answer the questions in the prompt. Upon completion, the file will be saved right in your project's folder.
 ## Examples of Use <a name="examples"></a>
-Going on vacation
+
 ## Technologies <a name="technologies"></a>
-#### -HTML
 #### -Javascript
-#### -CSS
 ## License <a name="license"></a>
 MIT License
 ## Contributions <a name="contributions"></a>
 ##### You can make contributions to my project here! 
- <button target=_blank href="https://github.com/nerdbird112">Contribute Here</button>
+ <button target=_blank href="https://github.com/amandajean007">Contribute Here</button>
 ## Illustrations <a name="illustrations"></a>
-![]
-## Tests <a name="tests"></a>
-
+![..]
 ## Questions <a name="questions"></a>
-#### If you have any questions please reach out to me via E-Mail: nerdbird112@gmail.com
+#### If you have any questions please reach out to me via E-Mail: ahanes35@yahoo.com
 ## Status <a name="status"></a>
 complete
 ## Sources <a name="sources"></a>
-Google
+Google, nmpjs.com
