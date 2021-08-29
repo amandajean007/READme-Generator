@@ -22,14 +22,7 @@ MIT License
 ##### You can make contributions to my project here! 
  <button target=_blank href="https://github.com/amandajean007">Contribute Here</button>
 ## Illustrations <a name="illustrations"></a>
-<!--<figure class="video_container">
-  <video controls="true" allowfullscreen="true" poster="./Assets/README-generator-screenshot.PNG">
-    <source src="howTo.mp4" type="video/mp4">
-  </video>
-</figure>-->
-<figure class="video_container">
-  <iframe src="./howTo.mp4" frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
+https://user-images.githubusercontent.com/85036414/131266689-7a3040c2-0637-4c7b-a2fd-0cf0e0dc5b64.mp4
 
 ## Questions <a name="questions"></a>
 #### If you have any questions please reach out to me via E-Mail: ahanes35@yahoo.com
