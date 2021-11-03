@@ -18,23 +18,23 @@ const questions = [
   name: 'description',
   message: "What's your project's aim?",
   default: 'The projects aim is... ',
-}, 
+  }, 
 
 // Email
 {
   type: 'input',
   name: 'email',
   message: 'What is your e-mail?',
-  default: 'nerdbird112@gmail.com',
-},
+  default: 'ahanes35@yahoo.com',
+  },
 
 // Github Username
 {
   type: 'input',
   name: 'githubUsername',
   message: 'What is your Github username?',
-  default: 'nerdbird112',
-},
+  default: 'amandajean007',
+  },
 
 // Technologies
 {
@@ -66,6 +66,15 @@ const questions = [
       {
         name: 'SQL'
       },
+      {
+        name: 'NoSQL'
+      },
+      {
+        name: 'MongoDB'
+      },
+      {
+        name: 'React'
+      },
     ]
   },
 
@@ -74,15 +83,8 @@ const questions = [
     type: 'input',
     name: 'installation',
     message: 'How do you launch your project?',
-    default: 'Add this link to your browser on any computer or smart device to run the website URL.'
+    default: 'Add this link to your browser on any computer or smart device to run the website.'
   },
-
-// Table of contents
-{
-    type: 'input',
-    name: 'tableOfContents',
-    message: 'Enter a table of contents?',
-   },
 
 // Illustrations
 {
@@ -124,19 +126,35 @@ const questions = [
   choices: ['Apache License 2.0', 'GNU General Public License v3.0', 'MIT License'],
 },
 
+
 // Sources
 {
-    type: 'input',
-    name: 'sources',
-    message: 'Which sources did you use?',
-    default: 'Google',
-}
+  type: 'checkbox',
+  name: 'sourcess',
+  message: 'Which sources did you use?',
+  choices: [
+    {
+      name: 'Google'
+    },
+    {
+      name: 'MDN Web Docs'
+    },
+    {
+      name: 'Stack Overflow'
+    },
+    {
+      name: 'Heroku Docs'
+    },
+    {
+      name: 'Sequelize Docs'
+    },
+  ]
+},
+]
 
-];
-
- inquirer.prompt(questions)
+inquirer.prompt(questions)
   .then((answers) => {
-  const filename = `README.md`;
+  const filename = `BREADME.md`;
   let badge = "";
 
   if (answers.license === "Apache License 2.0") {
@@ -147,7 +165,7 @@ const questions = [
     badge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
   }
 
-  let technologies = answers.technologies.toString().split(',').map((word) => `#### -${word}`).join("\n");
+  let technologies = answers.technologies.toString().split(',').map((word) => `   - ${word}`).join("\n");
 
   const readMe = '# ' + answers.title + 
   '\n' + badge + 
@@ -168,15 +186,15 @@ const questions = [
   '\n## Examples of Use <a name="examples"></a>\n' + answers.examplesOfUse +
   '\n## Technologies <a name="technologies"></a>\n' + technologies + 
   '\n## License <a name="license"></a>\n' + answers.license +
-  '\n## Contributions <a name="contributions"></a>\n' + '##### You can make contributions to my project here! \n <button target=_blank href="https://github.com/' + answers.githubUsername + '">Contribute Here</button>' +
+  '\n## Contributions <a name="contributions"></a>\n' + 'You can make contributions to my project <button target=_blank href="https://github.com/' + answers.githubUsername + '">here</button>! \n ' +
   '\n## Illustrations <a name="illustrations"></a>\n' + answers.illustrations +
   '\n## Tests <a name="tests"></a>\n' +
-  '\n## Questions <a name="questions"></a>\n' + '#### If you have any questions please reach out to me via E-Mail: ' + answers.email +
+  '\n## Questions <a name="questions"></a>\n' + 'If you have any questions please reach out to me via E-Mail: ' + answers.email +
   '\n## Status <a name="status"></a>\n' + answers.status +
   '\n## Sources <a name="sources"></a>\n' + answers.sources
 
 
-    fs.writeFile(filename, readMe, (err) =>
-      err ? console.log(err) : console.log('Success!')
-    );
-  });
+  fs.writeFile(filename, readMe, (err) =>
+    err ? console.log(err) : console.log('Success!')
+  );
+});
